@@ -8,5 +8,7 @@ public class Main {
     bebida1.mostrarInformacion();
     Comida comida1=new Comida("Churrasco", 10,"Parrillas",true);
     comida1.mostrarInformacion();
+    Cliente cliente1=new Cliente("Sergio",612345678);
+    cliente1.mostrarInformacion();
 }
 }
