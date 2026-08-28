@@ -10,5 +10,7 @@ public class Main {
     comida1.mostrarInformacion();
     Cliente cliente1=new Cliente("Sergio",612345678);
     cliente1.mostrarInformacion();
+    Camarero camarero1=new Camarero("Sergio",1);
+    camarero1.mostrarInformacion();
 }
 }
