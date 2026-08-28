@@ -1,10 +1,9 @@
 public class Main {
     static void main() {
-        Producto producto1 = new Producto("café", 1.50, "bebidas");
-        System.out.println("Precio final con descuento: " + producto1.aplicarDescuento(10) + "€");
+        Producto producto1 = new Producto("Café", 1.50, "bebidas");
         //producto1.mostrarInformacion();
 
-        Bebida bebida1 = new Bebida("caña", 3.00, "cerveza", "mediano");
+        Bebida bebida1 = new Bebida("Caña", 3.00, "cerveza", "mediana");
         //bebida1.mostrarInformacion();
         Comida comida1 = new Comida("Churrasco", 10.00, "Parrillas", true);
         //comida1.mostrarInformacion();
@@ -18,5 +17,10 @@ public class Main {
         ticket1.agregarProducto(bebida1);
         ticket1.agregarProducto(comida1);
         ticket1.mostrarTicket();
+        double precioConDescuento = producto1.aplicarDescuento(10);
+
+        System.out.println("Descuento aplicado al café: 10%");
+        System.out.printf("Precio final del café: %.2f €%n", precioConDescuento);
+        System.out.println("==============================");
     }
 }

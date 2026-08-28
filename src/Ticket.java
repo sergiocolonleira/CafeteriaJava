@@ -19,13 +19,21 @@ public class Ticket {
             System.out.println("No puedes añadir más productos");
         }
     }
-    public void mostrarTicket(){
-        cliente.mostrarInformacion();
-        camarero.mostrarInformacion();
-        for (int i=0;i<contadorProductos; i++) {
+    public void mostrarTicket() {
+        System.out.println("======= CAFETERÍA JAVA =======");
+        System.out.println();
+        System.out.println("Cliente: " + cliente.getNombreCliente());
+        System.out.println("Camarero: " + camarero.getNombreCamarero() + " - Código: " + camarero.getCodigoEmpleado());
+        System.out.println();
+        System.out.println("Productos:");
+
+        for (int i = 0; i < contadorProductos; i++) {
+            System.out.print((i + 1) + ". ");
             productos[i].mostrarInformacion();
         }
-        System.out.printf("Importe total: %.2f€%n", calcularTotal());
+        System.out.println();
+        System.out.printf("Total: %.2f €%n", calcularTotal());
+        System.out.println();
     }
 public double calcularTotal(){
         double total=0.0;

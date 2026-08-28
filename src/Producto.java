@@ -26,12 +26,10 @@ this.categoria=categoria;
         this.categoria=categoria;
     }
     public void mostrarInformacion(){
-        System.out.println("El producto es " + nombre + ", está en la categoría de " + categoria  + " y el precio es de " + precio + "€");
-    }
+        System.out.printf("%s - %.2f €%n", getNombre(), getPrecio());    }
     @Override
     public double aplicarDescuento(double porcentaje) {
-        precio = precio - (precio * porcentaje / 100);
-        return precio;
+        return precio - (precio * porcentaje / 100);
     }
 }
 

@@ -13,14 +13,14 @@ public class Comida extends Producto {
     public void setCaliente(boolean esCaliente) {
         this.esCaliente = esCaliente;
     }
+        @Override
+        public void mostrarInformacion() {
+            if (esCaliente) {
+                System.out.printf("%s caliente - %.2f €%n", getNombre(), getPrecio());
+            } else {
+                System.out.printf("%s fría - %.2f €%n", getNombre(), getPrecio());
+            }
 
-    @Override
-    public void mostrarInformacion() {
-        System.out.println("El plato es " + getNombre() + ", cuyo precio unitario es de " + getPrecio() + "€, y pertenece a la categoría de " + getCategoria());
-        if (esCaliente) {
-            System.out.println("Es comida caliente");
-        } else{
-            System.out.println("Es comida fria");
         }
     }
-}
+

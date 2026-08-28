@@ -13,7 +13,5 @@ public class Bebida extends Producto {
     }
 @Override
     public void mostrarInformacion(){
-    System.out.println("La bebida seleccionada es " + getNombre() + ", perteneciente a la categoría de " + getCategoria() +
-            ", cuyo valor unitario es de " + getPrecio() + "€ para el tamaño " + getTamano());
-}
+    System.out.printf("%s %s - %.2f €%n", getNombre(), getTamano(), getPrecio());}
 }
