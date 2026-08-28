@@ -19,4 +19,23 @@ public class Ticket {
             System.out.println("No puedes añadir más productos");
         }
     }
+    public void mostrarTicket(){
+        cliente.mostrarInformacion();
+        camarero.mostrarInformacion();
+        for (int i=0;i<contadorProductos; i++) {
+            productos[i].mostrarInformacion();
+        }
+        System.out.println("Importe total: " + calcularTotal() + "€");
+    }
+public double calcularTotal(){
+        double total=0;
+    for (int i = 0; i < contadorProductos; i++) {
+        total = total + productos[i].getPrecio();
+    }
+
+return total;
+
 }
+
+}
+

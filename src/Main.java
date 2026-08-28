@@ -5,12 +5,18 @@ public class Main {
         producto1.mostrarInformacion();
 
     Bebida bebida1 = new Bebida("caña", 3.00, "cerveza", "mediano");
-    bebida1.mostrarInformacion();
+    //bebida1.mostrarInformacion();
     Comida comida1=new Comida("Churrasco", 10,"Parrillas",true);
-    comida1.mostrarInformacion();
+    //comida1.mostrarInformacion();
     Cliente cliente1=new Cliente("Sergio",612345678);
-    cliente1.mostrarInformacion();
+    //cliente1.mostrarInformacion();
     Camarero camarero1=new Camarero("Sergio",1);
-    camarero1.mostrarInformacion();
+    //camarero1.mostrarInformacion();
+    Ticket ticket1 = new Ticket(cliente1,camarero1);
+
+ticket1.agregarProducto(producto1);
+ticket1.agregarProducto(bebida1);
+ticket1.agregarProducto(comida1);
+ticket1.mostrarTicket();
 }
 }
