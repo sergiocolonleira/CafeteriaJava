@@ -25,10 +25,10 @@ public class Ticket {
         for (int i=0;i<contadorProductos; i++) {
             productos[i].mostrarInformacion();
         }
-        System.out.println("Importe total: " + calcularTotal() + "€");
+        System.out.printf("Importe total: %.2f€%n", calcularTotal());
     }
 public double calcularTotal(){
-        double total=0;
+        double total=0.0;
     for (int i = 0; i < contadorProductos; i++) {
         total = total + productos[i].getPrecio();
     }

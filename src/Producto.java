@@ -29,8 +29,9 @@ this.categoria=categoria;
         System.out.println("El producto es " + nombre + ", está en la categoría de " + categoria  + " y el precio es de " + precio + "€");
     }
     @Override
-    public double aplicarDescuento (double porcentaje){
-        return precio - (precio * porcentaje / 100);
+    public double aplicarDescuento(double porcentaje) {
+        precio = precio - (precio * porcentaje / 100);
+        return precio;
     }
 }
 
