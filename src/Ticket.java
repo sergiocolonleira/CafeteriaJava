@@ -19,6 +19,7 @@ public class Ticket {
             System.out.println("No puedes añadir más productos");
         }
     }
+
     public void mostrarTicket() {
         System.out.println("======= CAFETERÍA JAVA =======");
         System.out.println();
@@ -35,15 +36,16 @@ public class Ticket {
         System.out.printf("Total: %.2f €%n", calcularTotal());
         System.out.println();
     }
-public double calcularTotal(){
-        double total=0.0;
-    for (int i = 0; i < contadorProductos; i++) {
-        total = total + productos[i].getPrecio();
+
+    public double calcularTotal() {
+        double total = 0.0;
+        for (int i = 0; i < contadorProductos; i++) {
+            total = total + productos[i].getPrecio();
+        }
+
+        return total;
+
     }
-
-return total;
-
-}
 
 }
 

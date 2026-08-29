@@ -1,3 +1,3 @@
 public interface Descontable {
-    double aplicarDescuento (double porcentaje);
+    double aplicarDescuento(double porcentaje);
 }
