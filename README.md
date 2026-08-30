@@ -70,9 +70,9 @@ También pueden ejecutarse desde el panel Maven de IntelliJ IDEA mediante:
 
 ## Documentación
 
-Las clases y métodos públicos del proyecto estarán documentados utilizando Javadoc.
+Las clases y métodos públicos del proyecto estan documentados utilizando Javadoc.
 
-La documentación HTML generada se almacenará en:
+La documentación HTML generada se encuentra en:
 
 - docs/
 
